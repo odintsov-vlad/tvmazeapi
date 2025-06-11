@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TV Maze</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <style>
+      /* Вставимо CSS після аналізу */
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <h1 class="mb-4">TV Maze</h1>
+
+      <!-- 🔍 Форма пошуку -->
+      <form id="search-form" class="mb-4">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="search-query"
+            placeholder="Search TV Shows"
+            required
+          />
+          <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+      </form>
+
+      <!-- 🎭 Список шоу -->
+      <div class="row" id="shows-list"></div>
+
+      <!-- 🎬 Список епізодів -->
+      <section id="episodes-area" class="mt-5 d-none">
+        <h2>Episodes</h2>
+        <ul id="episodes-list" class="list-group"></ul>
+      </section>
+    </div>
+
+    <!-- 📦 Скріпти -->
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="tvmaze.js"></script>
+  </body>
+</html>
